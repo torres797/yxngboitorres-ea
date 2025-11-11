@@ -6,11 +6,8 @@ python-dotenv==0.19.0
 gunicorn==20.1.0
 setuptools==65.5.0
 
-app = Flask(__name__)
-
-class TradingAnalyzer:
-    def __init__(self):
-        self.symbols = ['EURUSD', 'GBPUSD', 'USDJPY', 'XAUUSD']
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=False)
     
     def get_mock_data(self, symbol):
         """Generate mock market data (replace with real API)"""
