@@ -1,9 +1,10 @@
-from flask import Flask, render_template, jsonify
-import pandas as pd
-import numpy as np
-import requests
-from datetime import datetime
-import os
+flask==2.3.3
+pandas==1.5.3
+numpy==1.24.3
+requests==2.28.2
+python-dotenv==0.19.0
+gunicorn==20.1.0
+setuptools==65.5.0
 
 app = Flask(__name__)
 
